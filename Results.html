@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        #container {
+            text-align: center;
+            color: rgb(126, 18, 18);
+            padding: 10px;
+        }
+        
+        div>p {
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: darkred;
+            font-size: xx-large;
+        }
+        
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        th {
+            color: darkviolet;
+            border: 3px red double;
+            border-collapse: collapse;
+            padding: 10px;
+            font-size: larger;
+            font-weight: 900;
+        }
+        
+        td {
+            color: navy;
+            border: 3px red double;
+            border-collapse: collapse;
+            padding: 20px;
+            font-size: larger;
+            font-weight: 800;
+        }
+        
+        table {
+            border: 3px red double;
+            border-collapse: collapse;
+            font-family: inherit;
+            font-size: larger;
+            font: weight 900;
+            text-align: center;
+            padding: 5px;
+        }
+        
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body onload="res()">
+    <script src="Student.js"></script>
+    <div id="container">
+        <div id="resu">
+            <p>SEMESTER 2 RESULT</p>
+
+            <table id="res" class="center">
+                <tr>
+                    <th>SUBJECT </th>
+                    <th>GRADE</th>
+                </tr>
+            </table>
+        </div>
+        <button onclick="window.print()" download="Result">Print</button>
+    </div>
+
+</body>
+
+</html>

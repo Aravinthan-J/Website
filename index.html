@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college details</title>
+    <style>
+        body {
+            background-color: rgba(255, 254, 246, 0.925);
+        }
+        
+        header {
+            text-align: center;
+            padding: 25px;
+            background-image: repeating-linear-gradient(15deg, rgba(230, 59, 178, 0.486), rgb(199, 115, 181), rgba(218, 155, 228, 0.884), rgba(114, 14, 111, 0.774));
+        }
+        
+        table {
+            margin-top: 3px;
+            width: 100%;
+            background-image: linear-gradient(50deg, rgb(156 117 117 / 55%), rgb(197, 173, 173), rgb(191 157 157 / 78%), rgb(197, 173, 173))
+        }
+        
+        th:hover {
+            border: 1px double rgb(14, 0, 46);
+            font: x-large;
+        }
+        
+        a {
+            color: rgb(0, 57, 92);
+        }
+        
+        button {
+            background-color: transparent;
+            border: transparent;
+            color: rgba(10, 51, 78, 0.986);
+            font-size: small;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        
+        #container {
+            margin-top: 10px;
+            height: -webkit-fill-available;
+            width: -webkit-fill-available;
+            background-image: repeating-linear-gradient(20deg, #171516b0, #9E9E9E, #bfd8c9, transparent);
+        }
+        
+        iframe {
+            height: -webkit-fill-available;
+            width: -webkit-fill-available
+        }
+    </style>
+    <script src="Student.js"></script>
+</head>
+
+<body onload="main()">
+
+    <div>
+        <header><b style="color: rgb(10, 18, 131); font-size: x-large;">Welcome to Page </b></header>
+        <table>
+            <tr>
+                <th><a href="Student.html" target="view">Student Details</a>
+                </th>
+                <th><a href="Results.html" target="view">Results</a>
+                </th>
+                <th><a href="Fees.html" target="view">Fees</a>
+                </th>
+                <th><a href="Contact.html" target="view">Contact us </a>
+                </th>
+                <th><button onclick="logout()">Logout</button>
+                </th>
+            </tr>
+        </table>
+        <div id="container">
+            <iframe name="view" src="Student.html">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-image: repeating-linear-gradient(#0f0c29, #302b63, #24243e);
+            background-attachment: fixed;
+            text-align: -webkit-center;
+        }
+        
+        #container {
+            padding: 10px;
+            height: fit-content;
+            width: fit-content;
+            border: #010116 solid;
+            text-align: start;
+            background-color: rgba(74, 75, 182, 0.712);
+        }
+        
+        #reg,
+        #pass {
+            font-size: xx-large;
+            color: yellow;
+            font-family: auto;
+            font-weight: 600;
+        }
+        
+        input {
+            width: 500px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        
+        button {
+            margin-top: 10px;
+            border-radius: 10%;
+            color: whitesmoke;
+            background-color: rgb(9, 8, 85);
+        }
+        
+        #strsuc,
+        #wrgpas,
+        #wrgreg,
+        #full {
+            display: none;
+        }
+        
+        h1 {
+            color: darkorange;
+            background-color: #00008061;
+            font-family: fangsong;
+            font-size: -webkit-xxx-large;
+            font-weight: bolder;
+        }
+        
+        input::placeholder {
+            color: rgba(64, 50, 131, 0.979)
+        }
+    </style>
+</head>
+
+<body>
+    <script src="Student.js"></script>
+    <div style="
+    padding: 150px;
+">
+        <div>
+            <h1>LOGIN PAGE</h1>
+        </div>
+        <div id="container">
+            <p id="reg">Registration Number 🎓</p>
+            <input type="text" maxlength="10" placeholder="Enter Your Roll Number" id="username" autocomplete="off" required/>
+            <p id="pass">Password 🔒</p>
+            <input type="password" maxlength="9" placeholder="D.O.B: DD-MM-YY" id="password" required/>
+            <p style="text-align: center;"><button class=" btn btn-block mybtn btn-primary tx-tfm" onclick="us()">Login </button>
+            </p>
+        </div>
+        <div id="full" class="alert alert-danger" style="width: fit-content; margin-top: 20px; margin-left: auto; margin-right: auto;">
+            <strong> Please enter your Registration Number and Password !!!</strong>
+        </div>
+        <div id="wrgreg" class="alert alert-danger" style="width: fit-content; margin-top: 20px; margin-left: auto; margin-right: auto;">
+            <strong> Incorrect Registration Number !!!</strong>
+        </div>
+        <div id="wrgpas" class="alert alert-danger" style="width: fit-content; margin-top: 20px; margin-left: auto; margin-right: auto;">
+            <strong>Incorrect Password !!!!</strong>
+        </div>
+        <div class="alert alert-success" id="strsuc" style="width: fit-content; margin-top: 20px; margin-left: auto; margin-right: auto;">
+            <strong>You are successfully logged in!</strong>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
