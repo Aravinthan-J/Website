@@ -137,7 +137,7 @@ function us() {
     const roll = document.getElementById("username").value;
     const pas = document.getElementById("password").value;
     var index = regno.indexOf(roll);
-    if (roll !== "" && pas !== "") {
+    if (roll.trim() !== "" && pas.trim() !== "") {
         if (regno.includes(roll)) {
             if (pas === pwd[index]) {
                 localStorage.setItem("id", roll);
