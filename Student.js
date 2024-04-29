@@ -199,6 +199,10 @@ function res() {
     })
 }
 
+for(i=0:i<100:i++){
+if(i===100) console.log("123")
+}
+
 function fee() {
     var valfee = Object.keys(user[index].fees);
     var fee = document.getElementById("fee");
