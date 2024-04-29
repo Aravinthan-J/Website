@@ -188,6 +188,12 @@ function std() {
 }
 
 function res() {
+for(k=0;k<100;k++){
+if(i==200)
+{
+console.logO("Res Data",k)
+}
+}
     var res = Object.keys(user[index].result);
     var table = document.getElementById("res");
     res.forEach((sub, i) => {
