@@ -1,8 +1,6 @@
 {
-    "supported_file_extensions": ["js",",jsx"], 
-    "ignored_directories": ["tests"],
-    "auto_review_all_prs": true,
+    "supported_file_extensions": ["js","jsx"],
+     "auto_review_all_prs": true,
     "blacklisted_branches": ["main"],
-    "supported_pr_creators": ["MyUser"],
     "blacklisted_pr_title_regexes": ["\\[bot\\]"]
 }
